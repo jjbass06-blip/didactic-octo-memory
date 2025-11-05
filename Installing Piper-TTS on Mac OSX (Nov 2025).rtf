@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue7;\red26\green26\blue26;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c14913\c0;\csgray\c13536;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww30040\viewh16140\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Installing Piper-TTS on Mac OSX Sequoia (MacBook Pro M1)\
+\
+1) Do NOT install Python with Homebrew or with the Python package from website. This doesn't work\
+2) Use Homebrew to install Pyenv. (https://mac.install.guide/python/install-pyenv)\
+3) Install Python with Pyenv. Only install version 3.11 as onnxruntime doesn't currently play nicely with newer versions\
+4) You might need to install pip. If so use this guide: https://mac.install.guide/python/install-pip\
+5) Make sure that shell is pointing to the Pyenv installed version of python, not the OSX system python \
+		Add the following at the end of the ~/.zprofile file.\
+                    \cf2 export PYENV_ROOT="$HOME/.pyenv"\
+                    [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"\
+                      eval "$(pyenv init -)"\cf0 \
+\
+                 	(Changes to the ~/.zprofile file will not take effect in the Terminal until you've quit and restarted the terminal. Alternatively (this is easier), you can use the source command to reset the shell environment:\
+		 $\cf2  source ~/.zprofile \cf0 \
+6) Install Piper-TTS  via pip:  \cf2 pip install piper-tts\cf0 \
+7) Download voices from \cf2 https://huggingface.co/rhasspy/piper-voices/tree/main \cf3 and save them locally on your machine in a sensible place. (I use $User/piper/voices/en/ (then individual voice files folders\
+8) create a plain txt file input. I saved mine in documents\
+9) use this command to run piper, read the input file and create a wav file output. Note: You musty specify where the voice files are, where the input file is and where the wav file is output to:\
+	
+\f1\fs26 \cf2 piper --model "$HOME/piper/voices/en/Cori/en_GB-cori-high.onnx" --input-file $HOME/Documents/Piper-Test.txt --output-file $HOME/Documents/piperoutput.wav\cf0 \
+
+\f0\fs24 \cf3 \
+\cf0 \
+}
