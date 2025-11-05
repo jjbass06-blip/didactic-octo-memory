@@ -11,7 +11,9 @@ Installing Piper-TTS on Mac OSX Sequoia (MacBook Pro M1)
                       eval "$(pyenv init -)"
 
                 (Changes to the ~/.zprofile file will not take effect in the Terminal until you've quit and restarted the terminal. Alternatively (this is easier), you can use the source command to reset the shell environment:
-		 $ source ~/.zprofile 
+		 $ source ~/.zprofile
+
+7) Use pip to install onnxruntime: pip install onnxruntime. If you have followed the steps above it should install. If it doesn't install and throws up error messages about dependecnies then your mac is either looking at the wrong version of python or has the wrong version installed. 
 
 7) Install Piper-TTS  via pip:  pip install piper-tts
 8) Download voices from https://huggingface.co/rhasspy/piper-voices/tree/main and save them locally on your machine in a sensible place. (I use $User/piper/voices/en/ (then individual voice files folders)
