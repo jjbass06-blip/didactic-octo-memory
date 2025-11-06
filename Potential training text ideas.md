@@ -4,9 +4,9 @@ If, for example, I intend to use lots of musical words as my clone reads music t
 
 
 Training Text Idea 1
+
 Mattercorn
-•
-2y ago
+
 
       Prosecutors have opened a massive investigation into allegations of fixing games and illegal betting.
       
