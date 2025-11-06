@@ -1,8 +1,9 @@
 Overview of intention:
 To explore audio editing in relation to AI voice delivery:
-  1) Consider existing models
-  2) Trial a custom vocal set with a selected AI model
-  3) Seek to enhance phrasing and feel (markup and editing of amplitutde / formany and modulation
+  1) Consider existing models (using Piper models hosted at Hugging Face)
+  3) Record a custom vocal set
+  4) Train a new model using Google Collab
+  5) Seek to enhance phrasing and feel (markup and editing of amplitude / formant / modulation )
 
-Review after 6 months
+Review after 3 months
 
