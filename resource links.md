@@ -4,7 +4,7 @@ Installing python via pyenv: https://mac.install.guide/python/install-pyenv
 
 Piper Recording Studio: https://github.com/rhasspy/piper-recording-studio
 
-=Hugging Face Library of Voices: https://huggingface.co/rhasspy/piper-voices/tree/main
+Hugging Face Library of Voices: https://huggingface.co/rhasspy/piper-voices/tree/main
 
 Local web interface for Piper-TTS: https://github.com/prossm/basic-web-tts
 
